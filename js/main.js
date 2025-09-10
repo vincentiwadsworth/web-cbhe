@@ -90,12 +90,12 @@ function setupFilters() {
 async function loadOilPrices() {
     try {
         const wtiResponse = await fetch('https://api.api-ninjas.com/v1/commodityprice?name=crude_oil', {
-            headers: { 'X-Api-Key': 'TU_API_KEY' }
+            headers: { 'X-Api-Key': 's+HjoYgJOY6OxRfbw+jNbA==Y9xNy4TgGm6nCkWt' }
         });
         const wtiData = await wtiResponse.json();
         
         const brentResponse = await fetch('https://api.api-ninjas.com/v1/commodityprice?name=brent_crude_oil', {
-            headers: { 'X-Api-Key': 'TU_API_KEY' }
+            headers: { 'X-Api-Key': 's+HjoYgJOY6OxRfbw+jNbA==Y9xNy4TgGm6nCkWt' }
         });
         const brentData = await brentResponse.json();
         
