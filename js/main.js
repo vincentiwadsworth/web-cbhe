@@ -141,14 +141,13 @@ function setupForm() {
             submitBtn.disabled = true;
 
             // Enviar email (configurar con tus IDs reales)
-            /*
+            
             await emailjs.send(
-                'TU_SERVICE_ID',
-                'TU_TEMPLATE_ID',
+                'service_qtzqlpq',
+                'template_07u34g7',
                 templateParams
             );
-            */
-            
+                        
             // Simulación para demo
             await new Promise(resolve => setTimeout(resolve, 1000));
             
