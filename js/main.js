@@ -89,31 +89,20 @@ function setupFilters() {
 // Cargar precios de petróleo (API gratuita) [17][20][21]
 async function loadOilPrices() {
     try {
-        // Simulación de datos (reemplazar con API real)
-        // Para producción usar: https://api.api-ninjas.com/v1/commodityprice
-        const mockData = {
-            wti: { price: 63.21, change: 0.93 },
-            brent: { price: 66.89, change: 1.15 }
-        };
-
-        updatePriceDisplay('wti', mockData.wti);
-        updatePriceDisplay('brent', mockData.brent);
-
-        // Para API real descomenta esto:
-        /*
-        const response = await fetch('https://api.api-ninjas.com/v1/commodityprice?name=crude_oil', {
-            headers: {
-                'X-Api-Key': 'TU_API_KEY'
-            }
+        const wtiResponse = await fetch('https://api.api-ninjas.com/v1/commodityprice?name=crude_oil', {
+            headers: { 'X-Api-Key': 'TU_API_KEY' }
         });
-        const data = await response.json();
-        updatePriceDisplay('wti', { price: data.price, change: 0 });
-        */
+        const wtiData = await wtiResponse.json();
+        
+        const brentResponse = await fetch('https://api.api-ninjas.com/v1/commodityprice?name=brent_crude_oil', {
+            headers: { 'X-Api-Key': 'TU_API_KEY' }
+        });
+        const brentData = await brentResponse.json();
+        
+        updatePriceDisplay('wti', { price: wtiData.price, change: 0 });
+        updatePriceDisplay('brent', { price: brentData.price, change: 0 });
     } catch (error) {
-        console.log('Error cargando precios:', error);
-        // Mostrar datos mock en caso de error
-        updatePriceDisplay('wti', { price: 63.21, change: 0.93 });
-        updatePriceDisplay('brent', { price: 66.89, change: 1.15 });
+        console.log('Error:', error);
     }
 }
 
