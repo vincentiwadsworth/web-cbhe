@@ -1,5 +1,5 @@
 // Configuración EmailJS
-emailjs.init("TU_PUBLIC_KEY"); // Reemplazar con tu clave
+emailjs.init("Gn1lTn3q9PixAUwK7TU_PUBLIC_KEY"); // Reemplazar con tu clave
 
 // Variables globales
 let currentPrices = {};
