@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBHE - Cámara Boliviana de Hidrocarburos y Energía</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Moderno -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>CBHE</h2>
+                <span>Bolivia</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#observatorio">Observatorio</a></li>
+                    <li><a href="#afiliados">Afiliados</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#plan-upstream">Plan Upstream</a></li>
+                </ul>
+                <button class="menu-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Liderando la Transformación Energética de Bolivia</h1>
+                <p>La CBHE representa más del 90% de la producción nacional de hidrocarburos, trabajando por el desarrollo sostenible del sector energético boliviano.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">45+</span>
+                        <span class="stat-label">Empresas Afiliadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">90%</span>
+                        <span class="stat-label">Producción Nacional</span>
+                    </div>
+                </div>
+                <a href="#observatorio" class="cta-button">Ver Observatorio Petrolero</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Observatorio Petrolero -->
+    <section id="observatorio" class="observatorio">
+        <div class="container">
+            <h2>Observatorio Petrolero CBHE</h2>
+            <div class="observatorio-grid">
+                <div class="price-widget">
+                    <h3>Precio WTI</h3>
+                    <div id="wti-price" class="price">$--</div>
+                    <span class="price-change" id="wti-change">+0.00%</span>
+                </div>
+                <div class="price-widget">
+                    <h3>Brent</h3>
+                    <div id="brent-price" class="price">$--</div>
+                    <span class="price-change" id="brent-change">+0.00%</span>
+                </div>
+                <div class="analysis-widget">
+                    <h3>Análisis Semanal</h3>
+                    <p>Resumen ejecutivo de tendencias del mercado petrolero y su impacto en Bolivia.</p>
+                    <a href="#" class="btn-secondary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directorio de Afiliados -->
+    <section id="afiliados" class="afiliados">
+        <div class="container">
+            <h2>Nuestras Empresas Afiliadas</h2>
+            <div class="afiliados-categories">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="operadoras">Operadoras</button>
+                <button class="filter-btn" data-filter="servicios">Servicios</button>
+            </div>
+            <div class="afiliados-grid">
+                <div class="company-card" data-category="operadoras">
+                    <div class="company-logo">YPFB</div>
+                    <h3>YPFB</h3>
+                    <p>Empresa estatal boliviana de hidrocarburos</p>
+                </div>
+                <div class="company-card" data-category="operadoras">
+                    <div class="company-logo">TOTAL</div>
+                    <h3>Total Energies</h3>
+                    <p>Compañía multinacional de energía</p>
+                </div>
+                <div class="company-card" data-category="servicios">
+                    <div class="company-logo">SERV</div>
+                    <h3>Empresa de Servicios</h3>
+                    <p>Servicios especializados para la industria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Centro de Requerimientos -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2>Centro de Requerimientos Empresariales</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <h3>Publicar Requerimiento</h3>
+                    <p>¿Necesitas cotizaciones o servicios específicos? Publica tu requerimiento aquí.</p>
+                    <button class="btn-primary" onclick="abrirFormulario()">Publicar</button>
+                </div>
+                <div class="servicio-card">
+                    <h3>Directorio de Proveedores</h3>
+                    <p>Encuentra empresas especializadas en servicios para la industria de hidrocarburos.</p>
+                    <button class="btn-secondary">Explorar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Upstream Bolivia -->
+    <section id="plan-upstream" class="plan-upstream">
+        <div class="container">
+            <h2>Plan Upstream Bolivia</h2>
+            <div class="plan-content">
+                <div class="plan-text">
+                    <h3>Reactivando las Inversiones en el Sector</h3>
+                    <p>La CBHE presenta un plan integral para revitalizar el upstream boliviano, atrayendo inversiones y aumentando la producción nacional.</p>
+                    <ul>
+                        <li>Marco regulatorio competitivo</li>
+                        <li>Incentivos fiscales para exploración</li>
+                        <li>Infraestructura mejorada</li>
+                        <li>Transferencia tecnológica</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Descargar Plan Completo</a>
+                </div>
+                <div class="plan-visual">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="year">2025</span>
+                            <span class="milestone">Lanzamiento del Plan</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2026</span>
+                            <span class="milestone">Nuevas Licitaciones</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2027</span>
+                            <span class="milestone">Aumento de Producción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CBHE</h3>
+                    <p>Cámara Boliviana de Hidrocarburos y Energía</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>La Paz, Bolivia</p>
+                    <p>info@cbhe.org.bo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para Formulario -->
+    <div id="modal-formulario" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Publicar Requerimiento</h3>
+            <form id="requerimiento-form">
+                <input type="text" name="empresa" placeholder="Nombre de la empresa" required>
+                <input type="email" name="email" placeholder="Email de contacto" required>
+                <select name="categoria" required>
+                    <option value="">Seleccionar categoría</option>
+                    <option value="equipos">Equipos y Maquinaria</option>
+                    <option value="servicios">Servicios Técnicos</option>
+                    <option value="consultoria">Consultoría</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <textarea name="descripcion" placeholder="Descripción del requerimiento" required></textarea>
+                <button type="submit">Publicar Requerimiento</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
